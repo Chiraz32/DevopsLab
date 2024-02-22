@@ -1,6 +1,6 @@
 pipeline {
   environment {
-       registry = "farahsedd/DevOps-Lab"
+       registry = "Chiraz32/DevopsLab"
        docker Image = ''
   }
   agent {
@@ -9,7 +9,7 @@ pipeline {
   stages {
      stage('Pull from GitHub') {
               steps {
-                  git 'https://github.com/farahsedd/DevOps-Lab.git'
+                  git 'https://github.com/Chiraz32/DevopsLab.git'
               }
      }
        stage('Build Docker image') {
