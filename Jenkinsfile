@@ -2,7 +2,7 @@ pipeline {
   environment {
        registry = "Chiraz32/DevopsLab"
        registryCredential = 'docker'
-       docker Image = ''
+      
   }
   agent any
   stages {
