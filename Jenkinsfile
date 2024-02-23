@@ -1,7 +1,7 @@
 pipeline {
   environment {
        registry = "Chiraz32/DevopsLab"
-       DOCKER_CREDENTIALS = credentials('dockerhub-credentials')
+  
   }
  agent any
   stages {
