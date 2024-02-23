@@ -1,11 +1,9 @@
 pipeline {
   environment {
        registry = "Chiraz32/DevopsLab"
-       docker Image = ''
+       DOCKER_CREDENTIALS = credentials('dockerhub-credentials')
   }
-  agent {
-    dockerfile true
-  }
+ agent any
   stages {
      stage('Pull from GitHub') {
               steps {
